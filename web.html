@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>hamer game mr.game and watch</title>
+</head>
+<body>
+
+    <button id="infoButton">
+        <img src="image/info.png" alt="Info Button">
+    </button>
+
+    <div id="modal" class="hidden">
+        <div id="modalContent">
+            <span id="closeButton">&times;</span>
+            <h2> הוראות המשחק</h2>
+            <p>מטרת המשחק: להגיע ל - 99 נקודות לפני היריב</p>
+            <p>משחק זה מיועד לשני שחקנים המיוצגים לפי שני הדמיות אשר על המסך.</p>
+                 <p>בכל שלב של המשחק נבחרים שני מספרים אקראיים בין 1-9 אשר על פי הם השקנים מגיבים, ומי אשר מגיב מהר יותר בצורה נכונה בהתאם לרנדום מקבל יותר נקודות.</p>
+                 <p>לכל שחקן 2 כפתורים, כפתור אחד של התחמקות ושני של התקפה: </p>
+                 <p>צד שמאל מתקיף עם הכפתור ׳ד׳ ובורח עם ׳ש׳</p>
+                 <p>צד ימין מתקיף עם ׳ל׳ ובורח עם ׳ף׳</p>
+                 <p>משמעות הרנדומים: כאשר אתה מקבל מספר גבוהה או זהה למספר של ירביך אתה צריך ללחוץ על כפתור התקיפה שלך כמה שיותר מהר אך אם אתה מבל מספר נמוך יותר אתה צריך ללחוץ על מקש הריחה הכי מהר שאתה מסוגל</p>
+                 <p>חילוק נקודות:</p>
+                 <p>בריחה מוצלחת שווה 2 נקודות</p>
+                 <p>תקיפה מוצלחת שווה 3 נקודות</p>
+                 <p>תקיפה והתחמקות מתי שלא היית אמור ללחוץ מקשים אלו היריב מרוויח 2 נקודות והוא ראשי לקבל 2 נקודות אקסטה כאשר הוא נועל לפי גודל האקראי שלו יחסית לשלך. </p>
+        </div>
+    </div>
+    <div id="gameover" class="hidden">
+        <div id="gameovercontact"></div>
+            <span id="closetButton">&times;</span>
+            <h1>
+            המשחק נגמררררר
+            </h1>
+        </div>
+    </div>
+    <h1>
+        Game & watch
+    </h1>
+    <h2>
+        press space for start
+    </h2>
+    <audio id="myAudio" >
+        <source src="image/beep.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="myAudio1" >
+        <source src="image/beep1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="myAudio2" >
+        <source src="image/mixkit-office-telephone-ring-1350.wav" type="audio/mpeg">
+    </audio>
+    <canvas id="canvas" width="765.7" height="468.7" style="background-color: #d9e2e0;border-radius: 10pxs;border: 3px;"></canvas>
+    <div></div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
